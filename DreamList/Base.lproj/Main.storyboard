@@ -13,7 +13,7 @@
         <!--DreamList-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="DreamList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="DreamList" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -39,7 +39,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="148" id="ch0-kT-Ol6">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="148" id="ch0-kT-Ol6" customClass="ItemCell" customModule="DreamList" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="148"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ch0-kT-Ol6" id="YpB-iq-0cb">
@@ -109,6 +109,12 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="pzc-s3-LVQ" secondAttribute="bottom" id="dGv-eb-6GG"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="details" destination="DRI-ae-3Cz" id="qKw-Ts-Ok7"/>
+                                            <outlet property="price" destination="svN-72-ji1" id="rPw-83-8hI"/>
+                                            <outlet property="thumb" destination="1du-HH-VMG" id="DBO-2P-Kk1"/>
+                                            <outlet property="title" destination="IAK-Kk-SAO" id="dso-we-E6I"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -129,6 +135,10 @@
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="segment" destination="RgF-LV-ZwW" id="3XY-n6-sjD"/>
+                        <outlet property="tableView" destination="vlH-W7-pxe" id="1EU-o0-EFu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,7 +149,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Ng-9u-TcU" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="aZ7-Xo-oDm">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aZ7-Xo-oDm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

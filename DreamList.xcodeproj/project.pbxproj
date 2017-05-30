@@ -22,6 +22,7 @@
 		F692C3BC1EDCC334006804AA /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692C3B41EDCC334006804AA /* Store+CoreDataClass.swift */; };
 		F692C3BD1EDCC334006804AA /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692C3B51EDCC334006804AA /* Store+CoreDataProperties.swift */; };
 		F692C3C21EDCD20E006804AA /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692C3C11EDCD20E006804AA /* MaterialView.swift */; };
+		F692C3C41EDCD93D006804AA /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692C3C31EDCD93D006804AA /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		F692C3B41EDCC334006804AA /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F692C3B51EDCC334006804AA /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F692C3C11EDCD20E006804AA /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		F692C3C31EDCD93D006804AA /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				F692C3C11EDCD20E006804AA /* MaterialView.swift */,
+				F692C3C31EDCD93D006804AA /* ItemCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F692C3C41EDCD93D006804AA /* ItemCell.swift in Sources */,
 				F692C3BB1EDCC334006804AA /* Image+CoreDataProperties.swift in Sources */,
 				F692C3B91EDCC334006804AA /* Item+CoreDataProperties.swift in Sources */,
 				F692C3B81EDCC334006804AA /* Item+CoreDataClass.swift in Sources */,
