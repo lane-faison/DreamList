@@ -23,6 +23,8 @@
 		F692C3BD1EDCC334006804AA /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692C3B51EDCC334006804AA /* Store+CoreDataProperties.swift */; };
 		F692C3C21EDCD20E006804AA /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692C3C11EDCD20E006804AA /* MaterialView.swift */; };
 		F692C3C41EDCD93D006804AA /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692C3C31EDCD93D006804AA /* ItemCell.swift */; };
+		F6A790151EDDD1AB00C4128C /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A790141EDDD1AB00C4128C /* ItemDetailsVC.swift */; };
+		F6A790171EDDD68100C4128C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A790161EDDD68100C4128C /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		F692C3B51EDCC334006804AA /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F692C3C11EDCD20E006804AA /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		F692C3C31EDCD93D006804AA /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		F6A790141EDDD1AB00C4128C /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
+		F6A790161EDDD68100C4128C /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +80,12 @@
 		F692C3981EDCBF01006804AA /* DreamList */ = {
 			isa = PBXGroup;
 			children = (
-				F692C3C01EDCD1FA006804AA /* View */,
 				F692C3BE1EDCC349006804AA /* Model */,
-				F692C3991EDCBF01006804AA /* AppDelegate.swift */,
-				F692C39B1EDCBF01006804AA /* MainVC.swift */,
+				F692C3C01EDCD1FA006804AA /* View */,
+				F6A790131EDDD17700C4128C /* Controller */,
 				F692C39D1EDCBF01006804AA /* Main.storyboard */,
 				F692C3A31EDCBF01006804AA /* Assets.xcassets */,
+				F692C3991EDCBF01006804AA /* AppDelegate.swift */,
 				F692C3A51EDCBF01006804AA /* LaunchScreen.storyboard */,
 				F692C3A81EDCBF01006804AA /* Info.plist */,
 				F692C3A01EDCBF01006804AA /* DreamList.xcdatamodeld */,
@@ -115,10 +119,20 @@
 		F692C3C01EDCD1FA006804AA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F6A790161EDDD68100C4128C /* CustomTextField.swift */,
 				F692C3C11EDCD20E006804AA /* MaterialView.swift */,
 				F692C3C31EDCD93D006804AA /* ItemCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		F6A790131EDDD17700C4128C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F692C39B1EDCBF01006804AA /* MainVC.swift */,
+				F6A790141EDDD1AB00C4128C /* ItemDetailsVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,11 +216,13 @@
 				F692C3B61EDCC334006804AA /* ItemType+CoreDataClass.swift in Sources */,
 				F692C3BD1EDCC334006804AA /* Store+CoreDataProperties.swift in Sources */,
 				F692C3BA1EDCC334006804AA /* Image+CoreDataClass.swift in Sources */,
+				F6A790151EDDD1AB00C4128C /* ItemDetailsVC.swift in Sources */,
 				F692C3B71EDCC334006804AA /* ItemType+CoreDataProperties.swift in Sources */,
 				F692C39C1EDCBF01006804AA /* MainVC.swift in Sources */,
 				F692C3BC1EDCC334006804AA /* Store+CoreDataClass.swift in Sources */,
 				F692C39A1EDCBF01006804AA /* AppDelegate.swift in Sources */,
 				F692C3A21EDCBF01006804AA /* DreamList.xcdatamodeld in Sources */,
+				F6A790171EDDD68100C4128C /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +386,7 @@
 				F692C3AD1EDCBF01006804AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
